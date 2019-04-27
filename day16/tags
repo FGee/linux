@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUF_SZ	client/func_cli.h	2;"	d
+CC	Makefile	/^CC:=gcc$/;"	m
+CC	client/Makefile	/^CC:=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS:=-g -Wall -D DEBUG$/;"	m
+CFLAGS	client/Makefile	/^CFLAGS:=-g -Wall -D DEBUG$/;"	m
+CHECK_SIZE	send_fd.c	2;"	d	file:
+ELF	Makefile	/^ELF:=server_process_pool$/;"	m
+ELF	client/Makefile	/^ELF:=client_process_pool$/;"	m
+FILENAME	function.h	4;"	d
+MAX_CLIENT	function.h	2;"	d
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+OBJS	client/Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+Process_Data	function.h	/^} Process_Data;$/;"	t	typeref:struct:__anon1
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+SRCS	client/Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+TRAIN_SZ	function.h	3;"	d
+Train	function.h	/^} Train;$/;"	t	typeref:struct:__anon2
+buf	function.h	/^	char buf[TRAIN_SZ]; \/\/capture data$/;"	m	struct:__anon2
+busy	function.h	/^	short busy; \/\/ child busy 1, or sleep 0$/;"	m	struct:__anon1
+childHandle	child.c	/^int childHandle(int pipeFd)$/;"	f
+data_len	function.h	/^	int data_len; \/\/contol the translate$/;"	m	struct:__anon2
+fd	function.h	/^	int fd; \/\/ the one edge of pipe between parent process and child$/;"	m	struct:__anon1
+main	client/main.c	/^int main(int argc, char** argv)$/;"	f
+main	main.c	/^int main(int argc, char ** argv)$/;"	f
+makeChild	child.c	/^int makeChild(Process_Data *pChild, int childNum)$/;"	f
+pid	function.h	/^	pid_t pid; \/\/ child process pid$/;"	m	struct:__anon1
+recvFd	send_fd.c	/^int recvFd(int pipe_fd, int *pNewFd)$/;"	f
+reuseAddr	tcpInit.c	/^int reuseAddr(int sockFd)$/;"	f
+sendFd	send_fd.c	/^int sendFd(int pipe_fd, int newFd)$/;"	f
+tcpInit	tcpInit.c	/^int tcpInit(int *psockFd, char *ip, char *port)$/;"	f
+tranFile	tran_file.c	/^int tranFile(int newFd)$/;"	f
