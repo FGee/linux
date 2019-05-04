@@ -1,0 +1,87 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUF_SZ	2size_client/func_cli.h	3;"	d
+BUF_SZ	size_client/func_cli.h	3;"	d
+CC	2size_client/Makefile	/^CC:=gcc$/;"	m
+CC	Makefile	/^CC:=gcc$/;"	m
+CC	size_client/Makefile	/^CC:=gcc$/;"	m
+CFLAGS	2size_client/Makefile	/^CFLAGS:=-g -Wall -D DEBUG$/;"	m
+CFLAGS	Makefile	/^CFLAGS:= -g -Wall -D DEBUG$/;"	m
+CFLAGS	size_client/Makefile	/^CFLAGS:=-g -Wall -D DEBUG$/;"	m
+ELF	2size_client/Makefile	/^ELF:=client_process_pool$/;"	m
+ELF	Makefile	/^ELF:=thread_pool_server$/;"	m
+ELF	size_client/Makefile	/^ELF:=client_process_pool$/;"	m
+FILENAME	function.h	4;"	d
+FILENAME	tran_file.h	5;"	d
+Factory_t	factory.h	/^} Factory_t, *pFactory_t;$/;"	t	typeref:struct:__anon3
+MAX_CLIENT	function.h	2;"	d
+MAX_CLIENT	tcp_init.h	5;"	d
+Node_t	work_que.h	/^} Node_t, *pNode_t;$/;"	t	typeref:struct:node
+OBJS	2size_client/Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+OBJS	size_client/Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+Process_Data	function.h	/^} Process_Data;$/;"	t	typeref:struct:__anon1
+Que_t	work_que.h	/^} Que_t, *pQue_t;$/;"	t	typeref:struct:__anon4
+SLICE_SIZE	2size_client/func_cli.h	4;"	d
+SLICE_SIZE	2size_client/main.c	2;"	d	file:
+SLICE_SIZE	size_client/func_cli.h	4;"	d
+SLICE_SIZE	size_client/main.c	2;"	d	file:
+SRCS	2size_client/Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+SRCS	size_client/Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+TRAIN_SZ	function.h	3;"	d
+TRAIN_SZ	tran_file.h	6;"	d
+Train	function.h	/^} Train;$/;"	t	typeref:struct:__anon2
+Train	tran_file.h	/^} Train;$/;"	t	typeref:struct:__anon5
+_GNU_SOURCE	2size_client/func_cli.h	1;"	d
+_GNU_SOURCE	size_client/func_cli.h	1;"	d
+__FACTORY_H__	factory.h	2;"	d
+__HEAD_H__	head.h	2;"	d
+__TCP_INIT_H__	tcp_init.h	2;"	d
+__TRAN_FILE_H__	tran_file.h	2;"	d
+__WORK_QUE_H__	work_que.h	2;"	d
+buf	function.h	/^	char buf[TRAIN_SZ]; \/\/capture data$/;"	m	struct:__anon2
+buf	tran_file.h	/^	char buf[TRAIN_SZ]; \/\/capture data$/;"	m	struct:__anon5
+busy	function.h	/^	short busy; \/\/ child busy 1, or sleep 0$/;"	m	struct:__anon1
+capacity	work_que.h	/^    int capacity;$/;"	m	struct:__anon4
+cond	factory.h	/^    pthread_cond_t cond;\/\/the condition arugement that sync between main thread and child thread$/;"	m	struct:__anon3
+data_len	function.h	/^	int data_len; \/\/contol the translate$/;"	m	struct:__anon2
+data_len	tran_file.h	/^	int data_len; \/\/contol the translate$/;"	m	struct:__anon5
+factoryDestroy	factory.c	/^int factoryDestroy(pFactory_t pf)$/;"	f
+factoryInit	factory.c	/^int factoryInit(pFactory_t pf, int thrNum, int cap)$/;"	f
+factoryStart	factory.c	/^int factoryStart(pFactory_t pf)$/;"	f
+fd	function.h	/^	int fd; \/\/ the one edge of pipe between parent process and child$/;"	m	struct:__anon1
+fd	work_que.h	/^    int fd;$/;"	m	struct:node
+fds	main.c	/^int fds[2];$/;"	v
+main	2size_client/main.c	/^int main(int argc, char** argv)$/;"	f
+main	main.c	/^int main(int argc, char ** argv)$/;"	f
+main	size_client/main.c	/^int main(int argc, char** argv)$/;"	f
+node	work_que.h	/^typedef struct node {$/;"	s
+pFactory_t	factory.h	/^} Factory_t, *pFactory_t;$/;"	t	typeref:struct:__anon3
+pNext	work_que.h	/^    struct node *pNext;$/;"	m	struct:node	typeref:struct:node::node
+pNode_t	work_que.h	/^} Node_t, *pNode_t;$/;"	t	typeref:struct:node
+pQue_t	work_que.h	/^} Que_t, *pQue_t;$/;"	t	typeref:struct:__anon4
+phead	work_que.h	/^    pNode_t phead;$/;"	m	struct:__anon4
+pid	function.h	/^	pid_t pid; \/\/ child process pid$/;"	m	struct:__anon1
+ptail	work_que.h	/^    pNode_t ptail;$/;"	m	struct:__anon4
+pthid	factory.h	/^    pthread_t *pthid;\/\/store the start pointer point to thread id$/;"	m	struct:__anon3
+queGet	work_que.c	/^int queGet(pQue_t pq, pNode_t *pget)$/;"	f
+queInit	work_que.c	/^int queInit(pQue_t pq, int cap)$/;"	f
+queInsert	work_que.c	/^int queInsert(pQue_t pq, pNode_t pnew)$/;"	f
+que_mutex	work_que.h	/^    pthread_mutex_t que_mutex;\/\/the mutex of que$/;"	m	struct:__anon4
+recvCycle	2size_client/recv_cycle.c	/^int recvCycle(int sock_fd, char *buf, int dataLen)$/;"	f
+recvCycle	size_client/recv_cycle.c	/^int recvCycle(int sock_fd, char *buf, int dataLen)$/;"	f
+reuseAddr	tcp_init.c	/^int reuseAddr(int sockFd)$/;"	f
+sendCycle	tran_file.c	/^int sendCycle(int newfd, char *pMap, int lenth)$/;"	f
+sigHandler	main.c	/^void sigHandler(int sigNo)$/;"	f
+size	work_que.h	/^    int size;$/;"	m	struct:__anon4
+startFlag	factory.h	/^    short startFlag;\/\/ the signal of factory start$/;"	m	struct:__anon3
+tcpInit	tcp_init.c	/^int tcpInit(int *psockFd, char *ip, char *port)$/;"	f
+threadNum	factory.h	/^    int threadNum;\/\/the thread number which will to create$/;"	m	struct:__anon3
+threadTask	factory.c	/^void* threadTask(void *pArg)$/;"	f
+tranFile	tran_file.c	/^int tranFile(int newfd)$/;"	f
+work_que	factory.h	/^    Que_t work_que;\/\/store the task that main thread produce$/;"	m	struct:__anon3
